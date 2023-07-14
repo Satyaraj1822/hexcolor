@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+body{
+    font-family:'EB+Garamond' ;
+
+}
+.container{
+    
+    width:95%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.hex-colors{
+    
+    text-align: center;
+
+}
+.hex-colors h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changecolor 7s infinite alternate;
+}
+
+
+.hex-colors h2{
+    font-size: 2rem;
+    margin-top:15%
+}
+
+@keyframes changecolor{
+    0%{
+        color:indigo;
+    }
+    20%{
+        color:blueviolet;
+    }
+    40%{
+        color:yellowgreen;
+    }
+    60%{
+        color:goldenrod;
+    }
+    80%{
+        color:coral;
+    }
+    100%{
+        color:mediumspringgreen;
+    }
+}
+
+@media(max-width:480px)
+{
+    .hex-colors h1{
+        font-size: 1.5rem;
+
+    }
+}
